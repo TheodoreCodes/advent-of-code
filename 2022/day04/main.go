@@ -44,7 +44,7 @@ func part2(input string) int {
 			for j := 0; j <= 1; j++ {
 				if isIntBetweenBounds(pair[i][j], pair[(i+1)%2][0], pair[(i+1)%2][1]) {
 					counter++
-					i = 2
+					i = 2 // break for outer loop
 					break
 				}
 			}

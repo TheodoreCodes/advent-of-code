@@ -1,8 +1,8 @@
 *.iml
 .idea/
 go.sum
+input.txt
 
-/2022/day04/
 /2022/day05/
 /2022/day06/
 /2022/day07/

@@ -3,6 +3,7 @@ package main
 import (
 	_ "embed"
 	"fmt"
+	"strings"
 )
 
 //go:embed input.txt
@@ -20,4 +21,16 @@ func part1(input string) int {
 
 func part2(input string) int {
 	return 0
+}
+
+func parseInput(rawInput string) []string {
+	input = strings.TrimRight(rawInput, "\n")
+
+	var result []string
+
+	for _, line := range strings.Split(input, "\n") {
+		result = append(result, line)
+	}
+
+	return result
 }
